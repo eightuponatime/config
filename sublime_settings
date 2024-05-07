@@ -1,0 +1,28 @@
+{
+	"color_scheme": "Packages/Mac Classic.tmTheme/Mac Classic.tmTheme",
+	"ignored_packages": [],
+	"theme": "Default.sublime-theme",
+	"font_size": 9,
+	"dark_theme": "Default.sublime-theme",
+	"light_theme": "Default.sublime-theme",
+	//"font_face": "Consolas",
+	"font_face": "Fira Code",
+	//"font_face": "Monaco",
+	//"font_face": "JetBrains Mono NL",
+	//"font_face": "SF Mono", 
+	"index_files": true,
+	"auto_complete": false,
+	
+	"caret_style": "blink",
+	"caret_extra_bottom": 1,
+	"caret_extra_top": 2,
+	//"caret_extra_width": 1,
+	//"caret_extra_width": 5,
+	"wide caret": true,
+	"save_on_focus_lost": true,
+
+	"vintage_start_in_command": true,
+
+	"tab_size": 2,
+}
+
