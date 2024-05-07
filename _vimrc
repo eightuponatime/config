@@ -29,3 +29,9 @@ set guicursor=n-v-c-i:block-Cursor
 set visualbell
 set t_vb=
 
+"py indent settings:
+aug python
+    " ftype/python.vim overwrites this
+    au FileType python setlocal expandtab ts=2 sts=2 sw=2
+aug end
+
