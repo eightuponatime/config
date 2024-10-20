@@ -20,7 +20,9 @@ set ruler
 
 highlight Comment ctermfg=green
 
-set background =dark
+set background=light
+
+"colorscheme vacme
 
 set nocompatible
 
@@ -36,3 +38,7 @@ aug python
 aug end
 
 set cinoptions=(2,m1
+
+set mouse=a
+
+
