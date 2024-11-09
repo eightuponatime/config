@@ -4,3 +4,8 @@
 
 -file "_vimrc" config for windows vim in $HOME directory <br> 
 -file "gruvbox" config for git bash mintty theme. path: C:\Program Files\Git\usr\share\mintty\themes
+
+
+```sh
+sudo apt-get install vim-gtk3
+```
