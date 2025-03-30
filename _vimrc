@@ -41,4 +41,6 @@ set cinoptions=(2,m1
 
 set mouse=a
 
-
+aug rust
+  au FileType rust setlocal expandtab ts=2 sts=2 sw=2
+aug end
