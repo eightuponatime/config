@@ -12,23 +12,53 @@
     "editor.wordBasedSuggestions": "off"
   },
   "editor.minimap.enabled": false,
-  "workbench.settings.applyToAllProfiles": [
-  ],
+  "workbench.settings.applyToAllProfiles": [],
   "[Log]": {
     "editor.wordWrap": "on"
   },
   "debug.console.fontSize": 12,
-  "terminal.integrated.fontSize": 12,
-  "editor.fontFamily": "JetBrains Mono, Go Mono, Hack Nerd Font, Iosevka Nerd Font",
   "notebook.editorOptionsCustomizations": {
     "editor.tabSize": 2,
     "editor.indentSize": 2,
     "editor.insertSpaces": true,
   },
-  "editor.tabSize": 2,
-  "editor.fontSize": 12,
+  "[go]": {
+    // "editor.rulers": [
+    //   100
+    // ],
+    "editor.tabSize": 8,
+    "editor.insertSpaces": false
+  },
+  "editor.lineHeight": 1.1,
+  //"files.autoSave": "afterDelay",
+  "debug.console.fontFamily": "JetBrains Mono",
+  "editor.fontWeight": "normal",
+  "terminal.integrated.fontFamily": "JetBrains Mono",
+  //"editor.quickSuggestions": { "other": "off" },
+  "editor.tokenColorCustomizations": {
+    "[Monokai]": {
+      "textMateRules": [
+        {
+          "scope": "entity.name.type, entity.name.class, entity.name.namespace, entity.name.scope-resolution",
+          "settings": {
+            "fontStyle": ""
+          }
+        }
+      ]
+    }
+  },
+  "workbench.editor.wrapTabs": true,
   "files.autoSave": "afterDelay",
-  "editor.lineHeight": 1.1
-
-
+  "editor.fontFamily": "Cousine, Hack, Consolas, 'Courier New', monospace",
+  "terminal.integrated.fontSize": 12,
+  "go.toolsManagement.autoUpdate": true,
+  "go.formatTool": "goimports",
+  "editor.formatOnSave": true,
+  "explorer.confirmDragAndDrop": false,
+  "workbench.editor.empty.hint": "hidden",
+  "editor.tabSize": 2,
+  "files.associations": {
+    "*.tmpl": "html"
+  },
+  "editor.fontSize": 12
 }
