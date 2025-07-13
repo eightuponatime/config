@@ -1,12 +1,10 @@
-map <C-S-v> <S-Insert>  
-
-set backspace=indent,eol,start
-
 syntax on
 
 set tabstop=2
 
 set shiftwidth=2
+
+set softtabstop=2
 
 set expandtab
 
@@ -18,29 +16,33 @@ set hlsearch
 
 set ruler
 
-highlight Comment ctermfg=green
+set background=dark
 
-set background=light
+colorscheme mycolorscheme
+colorscheme peachpuff
 
-"colorscheme vacme
+vnoremap <C-S-Up>   :m '<-2<CR>gv=gv
+vnoremap <C-S-Down> :m '>+1<CR>gv=gv
 
-set nocompatible
+"if there's a problem with 4 spaces indent in python
+"go to /usr/share/vim/vim82/ftplugin/python.vim
+"and change all 4 to 2
 
-set guicursor=n-v-c-i:block-Cursor
-
-set visualbell
-set t_vb=
-
-"py indent settings:
-aug python
-    " ftype/python.vim overwrites this
-    au FileType python setlocal expandtab ts=2 sts=2 sw=2
-aug end
-
-set cinoptions=(2,m1
-
+function! GetPythonIndent()
+   return indent(".") . substitute(getline(v:lnum - 1), '^\s*\zs#\([# ]*\)\=', '', '')
+endfunction
+augroup python_settings
+  autocmd!
+  autocmd FileType python setlocal indentexpr=GetPythonIndent()
+augroup END
 set mouse=a
 
-aug rust
-  au FileType rust setlocal expandtab ts=2 sts=2 sw=2
-aug end
+let g:solarized_termcolors=256
+set t_Co=256
+
+highlight Comment ctermfg = green
+
+augroup cpp_settings
+  autocmd!
+  autocmd FileType cpp setlocal expandtab tabstop=2 softtabstop=2 shiftwidth=2 cindent cinoptions=t0
+augroup END
