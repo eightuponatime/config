@@ -24,5 +24,13 @@
 	"vintage_start_in_command": true,
 
 	"tab_size": 2,
+
+	"font_options":
+		[
+	    "no_round",
+	    "no_italic",
+	    "gray_antialias",
+	    "subpixel_antialias"
+		],
 }
 
