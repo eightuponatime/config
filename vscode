@@ -16,24 +16,23 @@
   "[Log]": {
     "editor.wordWrap": "on"
   },
-  "debug.console.fontSize": 12,
   "notebook.editorOptionsCustomizations": {
     "editor.tabSize": 2,
     "editor.indentSize": 2,
     "editor.insertSpaces": true,
   },
   "[go]": {
-    // "editor.rulers": [
-    //   100
-    // ],
+    "editor.rulers": [
+      100
+    ],
     "editor.tabSize": 8,
     "editor.insertSpaces": false
   },
-  "editor.lineHeight": 1.1,
+  //"editor.lineHeight": 1.1,
   //"files.autoSave": "afterDelay",
-  "debug.console.fontFamily": "JetBrains Mono",
+  "debug.console.fontFamily": "Hack, Fira Code Retina Medium, JetBrains Mono",
   "editor.fontWeight": "normal",
-  "terminal.integrated.fontFamily": "JetBrains Mono",
+  "terminal.integrated.fontFamily": "Hack, Fira Code Retina Medium, JetBrains Mono",
   //"editor.quickSuggestions": { "other": "off" },
   "editor.tokenColorCustomizations": {
     "[Monokai]": {
@@ -49,8 +48,7 @@
   },
   "workbench.editor.wrapTabs": true,
   "files.autoSave": "afterDelay",
-  "editor.fontFamily": "Cousine, Hack, Consolas, 'Courier New', monospace",
-  "terminal.integrated.fontSize": 12,
+  "editor.fontFamily": "Meslo LG L, 'Courier New', monospace",
   "go.toolsManagement.autoUpdate": true,
   "go.formatTool": "goimports",
   "editor.formatOnSave": true,
@@ -60,5 +58,30 @@
   "files.associations": {
     "*.tmpl": "html"
   },
-  "editor.fontSize": 12
+  "[python]": {
+    // "editor.defaultFormatter": "ms-python.black-formatter",
+    "editor.tabSize": 2,
+    "editor.formatOnSave": true
+  },
+  "editor.fontSize": 12,
+  "debug.console.fontSize": 12,
+  "terminal.integrated.fontSize": 12,
+  // c++ configure
+  "C_Cpp.formatting": "vcFormat",
+  "C_Cpp.vcFormat.indent.braces": true,
+  "C_Cpp.vcFormat.newLine.beforeOpenBrace.block": "sameLine",
+  "C_Cpp.vcFormat.newLine.beforeOpenBrace.function": "sameLine",
+  "C_Cpp.vcFormat.newLine.beforeOpenBrace.type": "sameLine",
+  "C_Cpp.vcFormat.newLine.beforeOpenBrace.namespace": "sameLine",
+  "C_Cpp.vcFormat.newLine.beforeCloseBrace": false,
+  "[cpp]": {
+    "editor.tabSize": 2,
+    "editor.formatOnSave": true,
+    "editor.defaultFormatter": "ms-vscode.cpptools"
+  },
+  "[c]": {
+    "editor.tabSize": 2,
+    "editor.formatOnSave": true,
+    "editor.defaultFormatter": "ms-vscode.cpptools"
+  },
 }
