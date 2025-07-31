@@ -68,7 +68,6 @@
   "terminal.integrated.fontSize": 12,
   // c++ configure
   "C_Cpp.formatting": "vcFormat",
-  "C_Cpp.vcFormat.indent.braces": true,
   "C_Cpp.vcFormat.newLine.beforeOpenBrace.block": "sameLine",
   "C_Cpp.vcFormat.newLine.beforeOpenBrace.function": "sameLine",
   "C_Cpp.vcFormat.newLine.beforeOpenBrace.type": "sameLine",
