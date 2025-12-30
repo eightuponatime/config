@@ -42,8 +42,8 @@ augroup python_settings
 augroup END
 set mouse=a
 
-let g:solarized_termcolors=256
-set t_Co=256
+"let g:solarized_termcolors=256
+"set t_Co=256
 
 highlight Comment ctermfg = green
 
