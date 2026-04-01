@@ -35,13 +35,14 @@
 
 ;; (setq doom-theme 'doom-one)
 (setq doom-theme 'gruber-darker)
+;; (setq doom-theme 'eink)
 ;; (setq doom-theme 'monokai)
 ;; (setq doom-theme 'hipster)
 ;; (setq doom-font(font-spec :family "Iosevka NFM" :size 20))
 ;; (setq doom-font(font-spec :family "Hack" :size 16))
 ;; (setq doom-font(font-spec :family "SF Mono" :size 16))
 ;; (setq doom-font(font-spec :family "Fira Code" :size 16))
-(setq doom-font(font-spec :family "MartianMono Nerd Font Mono" :size 16))
+(setq doom-font(font-spec :family "MartianMono Nerd Font Mono" :size 15))
 
 (setq treemacs-width 35)                    ; ширина панели
 (setq treemacs-follow-mode t)               ; автоматически показывать текущий файл
@@ -90,10 +91,12 @@
 ;; You can also try 'gd' (or 'C-c c d') to jump to their definition and see how
 ;; they are implemented.
 
+
+  ;;(setq elcord-display-buffer-details nil)
+
 (use-package! elcord
   :config
   (setq elcord-use-major-mode-as-main-icon nil)
-  (setq elcord-display-buffer-details nil)
   (elcord-mode))
 
 (add-hook 'eshell-mode-hook
@@ -128,3 +131,12 @@
 
 (add-hook 'org-mode-hook #'org-toggle-inline-images)
 ;; ======================
+;; acme theme settings
+;;(add-to-list 'custom-theme-load-path "~/.doom.d/themes/")
+;;(setq doom-theme 'acme)
+
+
+;; ======================
+;; intellij theme settings
+;;(add-to-list 'custom-theme-load-path "~/.doom.d/themes/")
+;;(setq doom-theme 'intellij)
