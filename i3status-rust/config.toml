@@ -1,0 +1,115 @@
+icons_format = ""
+
+[theme]
+theme = "plain"
+
+[theme.overrides]
+idle_bg = "#000000"
+idle_fg = "#FFFFFF"
+
+good_bg = "#000000"
+good_fg = "#00FF00"
+
+info_bg = "#000000"
+info_fg = "#FFFFFF"
+
+warning_bg = "#000000"
+warning_fg = "#FFFF00"
+
+critical_bg = "#000000"
+critical_fg = "#FF0000"
+
+separator = ""
+separator_bg = "#000000"
+separator_fg = "#FFFFFF"
+
+[icons]
+icons = "none"
+
+
+# WI-FI — зелёный
+[[block]]
+block = "custom"
+command = "~/.config/i3status-rust/network.sh"
+interval = 2
+json = true
+format = "$text"
+
+
+# Separator
+[[block]]
+block = "custom"
+command = "printf '|'"
+interval = 3600
+format = "$text"
+
+
+# Температура
+[[block]]
+block = "temperature"
+chip = "*-isa-*"
+interval = 5
+format = "TEMP $average"
+
+
+# Separator
+[[block]]
+block = "custom"
+command = "printf '|'"
+interval = 3600
+format = "$text"
+
+
+# mem
+[[block]]
+block = "memory"
+interval = 5
+format = "RAM$mem_used.eng(prefix:G)/$mem_total.eng(prefix:G)"
+
+
+# Separator
+[[block]]
+block = "custom"
+command = "printf '|'"
+interval = 3600
+format = "$text"
+
+# Battery
+[[block]]
+block = "battery"
+device = "BAT0"
+interval = 10
+format = "BAT $percentage{$time_remaining.dur(max_unit:h, min_unit:m, units:2)|}"
+charging_format = "BAT $percentage CHG"
+full_format = "BAT $percentage"
+
+# Separator
+[[block]]
+block = "custom"
+command = "printf '|'"
+interval = 3600
+format = "$text"
+
+# Language layout 
+[[block]]
+block = "keyboard_layout"
+driver = "xkbevent"
+format = "$layout"
+
+[block.mappings]
+"us (N/A)" = "US"
+"ru (N/A)" = "RU"
+
+# Separator
+[[block]]
+block = "custom"
+command = "printf '|'"
+interval = 3600
+format = "$text"
+
+
+# datetime
+[[block]]
+block = "time"
+interval = 1
+format = "$timestamp.datetime(f:'%d.%m.%Y %H:%M')"
